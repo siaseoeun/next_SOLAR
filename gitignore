@@ -1,0 +1,52 @@
+# === 절대 커밋 금지 ===
+.env
+.env.*
+*.key
+*.pem
+secrets.yaml
+credentials.json
+wandb/settings
+
+# === 데이터 ===
+data/
+!data/.gitkeep
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.bag
+*.pcd
+*.mp4
+
+# === 체크포인트 / 결과물 ===
+checkpoints/
+outputs/
+runs/
+logs/
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.safetensors
+
+# === 실험 추적 ===
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+.hydra/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# === 에디터 / OS ===
+.vscode/
+.idea/
+.DS_Store
+*.swp
